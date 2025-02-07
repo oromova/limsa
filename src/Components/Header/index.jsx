@@ -1,7 +1,14 @@
-import React from 'react';
 import logo from '../../assets/header-logo.png';
-
+import { useTranslation } from 'react-i18next';
 export const Header = () => {
+  const { t, i18n } = useTranslation();
+  const launguage = localStorage.getItem('i18nextLng')
+
+  const handleChange = (event) => {
+    const selectedLanguage = event.target.value
+    i18n.changeLanguage(selectedLanguage)
+  }
+
   return (
     <header>
       <nav className='pt-3.5 pb-2.5 fixed w-full z-50 duration-300 text-white bg-[#161616]'>
@@ -16,18 +23,19 @@ export const Header = () => {
             <div className='w-[740px]'>
               <ul className='flex items-start mx-4'>
                 <li className="mx-4">
-                  <a href="/">Home</a>
+                  <a href="/">{t('header.home')}</a>
                 </li>
                 <li className="mx-4">
-                  <a href="/">Our services</a>
+                  <a href="/">{t("header.service")}</a>
                 </li>
                 <li className="mx-4">
-                  <a href="/">Our works</a>
+                  <a href="/">{t("header.work")}</a>
                 </li>
                 <li className="mx-4">
-                  <a href="/">Prices</a>
+                  <a href="/">{t("header.price")}</a>
                 </li>
-                <select className="focus:outline-none bg-transparent cursor-pointer pt-1 font-semibold">
+                <select className="focus:outline-none bg-transparent cursor-pointer pt-1 font-semibold"
+                  onChange={handleChange} value={launguage}>
                   <option value="uz">Уз</option>
                   <option value="ru">Ру</option>
                   <option value="en">Eng</option>

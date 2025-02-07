@@ -7,7 +7,7 @@ import img6 from '../assets/project6.jpg'
 import img7 from '../assets/project7.jpg'
 import img8 from '../assets/project8.jpg'
 
-const projects =[
+const project =[
   {
     "id": 1,
     "src": img1,
@@ -74,4 +74,4 @@ const projects =[
   },
 ]
 
-export default projects;
+export default project;

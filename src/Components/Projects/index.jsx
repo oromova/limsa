@@ -1,16 +1,18 @@
-// import img1 from '../../../assets/project1.jpg';
-import projects from '../../../Mock/project';
+import { useTranslation } from 'react-i18next';
+import project from '../../Mock/project';
 
 export const Projects = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className='pt-[150px]'>
+    <section className='pt-[150px] '>
       <div className='px-5'>
-        <div>
-          <h2 className='mt-8 mb-20 font-semibold text-4xl text-center'>Our Recent Projects</h2>
+        <div className='max-w-[1200px] mx-auto'>
+          <h2 className='mt-8 mb-20 font-semibold text-4xl text-center'>{t("projects.title")}</h2>
           <ul className='grid grid-cols-3 gap-10'>
-            {projects.map((item) => (
-              <div className='border-b-2 border-[#444444] mb-8'>
-                <li key={item.id}
+            {project.map((item) => (
+              <div key={item.id} className='border-b-2 border-[#444444] mb-8'>
+                <li 
                   className="pb-8 mb-32 relative max-w-[400px] max-h-[220px] border-b-2 border-[#444444]">
                   <a
                     className="cursor-pointer block relative"
@@ -33,9 +35,7 @@ export const Projects = () => {
                   </a>
                 </li>
               </div>
-
             ))}
-
           </ul>
         </div>
       </div>

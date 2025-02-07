@@ -1,0 +1,23 @@
+{
+  "header": {
+    "home": "Home",
+    "service": "Our Services",
+    "work": "Our works",
+    "price": "Prices",
+    "title": "Perfect 'IT' solutions to grow your business!",
+    "description": "Entrust your project to experts with more than 10 years of experience and achieve high success in a short time.",
+    "btn": "Contact"
+  },
+  "accardion": {
+    "title": "Frequently Asked Questions",
+    "subtitle1": "Why are the prices so cheap?",
+    "description": "Our prices are really cheap compared to the quality. The reason is that we don't have excess labor in our web studio, so we don't have excess costs. That's why we keep our prices low compared to others.?",
+    "subtitle2": "Will I be able to edit the site myself in the future?",
+    "description2": "Our prices are really cheap compared to the quality. The reason is that we don't have excess labor in our web studio, so we don't have excess costs. That's why we keep our prices low compared to others.",
+    "subtitle3": "Will you continue to support the site after it's finished?",
+    "description3": "Our prices are really cheap compared to the quality. The reason is that we don't have excess labor in our web studio, so we don't have excess costs. That's why we keep our prices low compared to others."
+  },
+  "projects": {
+    "title": "Our Recent Projects"
+  }
+}
