@@ -19,5 +19,14 @@
   },
   "projects": {
     "title": "Our Recent Projects"
+  },
+  "modal": {
+    "title": "Order a website for your business now, And get a small gift from us 10% off!",
+    "subtitle": "Satisfying every customer is our highest goal - LIMSA",
+    "pages": "Pages",
+    "label": "Leave your details",
+    "placeholder": "your name",
+    "textarea": "Your message",
+    "Send": "Send"
   }
 }

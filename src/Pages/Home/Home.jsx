@@ -5,6 +5,7 @@ import { Slide } from './Slide';
 import { Projects } from '../../Components/Projects';
 import { OurBenefits } from '../../Components/OurBenefits';
 import { Contacts } from '../../Components/Contacts';
+import { Modal } from '../../Components/Modal';
 
 
 export const Home = () => {
@@ -36,6 +37,8 @@ export const Home = () => {
       {/* section 5 */}
       <OurBenefits/>
       {/* section 6 */}
+      <Modal/>
+      {/* section 7*/}
       <Contacts/>
     </div >
   );
