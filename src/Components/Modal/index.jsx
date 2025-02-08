@@ -12,15 +12,15 @@ export const Modal = () => {
         <div className='flex justify-between gap-60px'>
           <div className='max-w-[550px] '>
             <h2 className='text-4xl font-semibold my-[30px]'>{t('modal.title')}</h2>
-            <p className='my-4'>{t("modal.subtitle")}</p>
+            <p className='my-4 text-[#6c2dba] text-[18px]'>{t("modal.subtitle")}</p>
             <div>
-              <h3 className='my-[18px] text-[18px] font-semibold'>Pages</h3>
+              <h3 className='my-[18px] text-[18px] font-semibold'>{t("modal.pages")}</h3>
               <ul>
-                <li className='text-[#6c6c6c]'>
-                  <a href="/">{t("header.home")}</a>
+                <li >
+                  <a className='text-[#6c6c6c]' href="/">{t("header.home")}</a>
                 </li>
                 <li>
-                  <a href="/">{t("header.service")}</a>
+                  <a className='text-[#6c6c6c]' href="/">{t("header.service")}</a>
                 </li>
               </ul>
             </div>
@@ -36,7 +36,7 @@ export const Modal = () => {
             </div>
             <textarea className='min-w-full h-[100px] rounded-[20px] p-5 mb-[30px] outline-0  bg-[#363636]' name="feedback" placeholder="Your message" maxLength={200} id=""></textarea>
             <button className='bg-[#6c2dba] px-[60px] py-[15px] rounded-[25px] cursor-pointer '>
-              {t('modal.send')}
+              {t('modal.Send')}
             </button>
           </form>
         </div>

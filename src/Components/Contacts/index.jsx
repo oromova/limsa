@@ -1,37 +1,39 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Contacts = () => {
+  const { t } = useTranslation();
   return (
     <section className='my-[70px]'>
       <div className='px-5 max-w-[1200px] mx-auto'>
-        <h2 className='text-[40px] font-bold my-[35px]'>Contacts</h2>
+        <h2 className='text-[40px] font-bold my-[35px]'>{t("contact.title")}</h2>
         <div className='flex text-center '>
           <ul className='grid grid-cols-2 gap-[30px] my-4'>
             <li className='flex gap-[20px] w-[300px]'>
               <svg className='text-[27px]' stroke="currentColor"  stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" ><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0 0 25.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"></path><circle cx="256" cy="192" r="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle></svg>
               <div className='text-left'>
-                <h2 className='text-[18px] font-semibold'>Address</h2>
-                <p className='text-[14px] my-[14px]' style={{color: "#a1a1a1"}}>Tashkent city Yunusabad district</p>
+                <h2 className='text-[18px] font-semibold'>{t("contact.title")}</h2>
+                <p className='text-[14px] my-[14px]' style={{color: "#a1a1a1"}}>{t("contact.address2")}</p>
               </div>
             </li>
             <li className='flex gap-[20px] w-[300px]'>
               <svg className='text-[27px]' stroke="currentColor" fill="#a1a1a1" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M15 12h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3zm4 0h2a9 9 0 0 0-9-9v2c3.87 0 7 3.13 7 7zm1 3.5c-1.25 0-2.45-.2-3.57-.57-.1-.03-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2a15.045 15.045 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM5.03 5h1.5c.07.88.22 1.75.45 2.58l-1.2 1.21c-.4-1.21-.66-2.47-.75-3.79zM19 18.97c-1.32-.09-2.6-.35-3.8-.76l1.2-1.2c.85.24 1.72.39 2.6.45v1.51z"></path></svg>
               <div className='text-left'>
-                <h2 className='text-[18px] font-semibold'>Phone Number</h2>
+                <h2 className='text-[18px] font-semibold'>{t("contact.number")}</h2>
                 <a className='text-[14px] my-[14px]' href="tel:+998935138833 " style={{color: "#a1a1a1"}}>+998 (33) 258 73 58</a>
               </div>
             </li>
             <li className='flex gap-[20px] w-[300px]'>
               <svg className='text-[27px]' stroke="currentColor" fill="#a1a1a1" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-5 2.66a1 1 0 0 0 -1 1v5a1 1 0 0 0 1 1h3.5a1 1 0 0 0 0 -2h-2.5v-4a1 1 0 0 0 -.883 -.993z"></path></svg>
               <div className='text-left'>
-                <h2 className='text-[18px] font-semibold'>Working hours</h2>
-                <p className='text-[14px] my-[14px]' style={{color: "#a1a1a1"}}>9:00 18:00 Monday-Saturday</p>
+                <h2 className='text-[18px] font-semibold'>{t("contact.hours")}</h2>
+                <p className='text-[14px] my-[14px]' style={{color: "#a1a1a1"}}>{t("contact.hours2")}</p>
               </div>
             </li>
             <li className='flex gap-[20px] w-[300px]'>
               <svg className='text-[27px]' stroke="currentColor" fill="#a1a1a1" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M384 336a63.78 63.78 0 0 0-46.12 19.7l-148-83.27a63.85 63.85 0 0 0 0-32.86l148-83.27a63.8 63.8 0 1 0-15.73-27.87l-148 83.27a64 64 0 1 0 0 88.6l148 83.27A64 64 0 1 0 384 336z"></path></svg>
               <div className='text-left'>
-                <h2 className='text-[18px] font-semibold'>Social networks</h2>
+                <h2 className='text-[18px] font-semibold'>{t("contact.social")}</h2>
                 <p className='text-[14px] my-[14px] flex gap-2.5'>
                   <a href="https://www.linkedin.com/company/limsa-2021/" target="_blanc">
                     <svg className='w-[27px] h-[31px]' stroke="currentColor" fill="#a1a1a1" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a>

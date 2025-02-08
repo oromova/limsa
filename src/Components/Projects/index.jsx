@@ -29,7 +29,7 @@ export const Projects = () => {
                       />
                       <p className='absolute -top-12 left-5 font-bold mx-4'>{item.cite}</p>
                     </div>
-                    <p className="mt-4 text-gray-700 ">
+                    <p className="mt-4 text-gray-700 text-white">
                       {item.description}
                     </p>
                   </a>
