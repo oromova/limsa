@@ -28,5 +28,9 @@
     "placeholder": "your name",
     "textarea": "Your message",
     "Send": "Send"
-  }
+  },
+  "benefits": {
+    "title": "Why us? Why most people choose us?",
+    "subtitle": "Our Benefits"
+  } 
 }
