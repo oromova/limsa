@@ -23,7 +23,7 @@ export const Home = () => {
             <p className='text-[18px] mb-6'>
               {t("header.description")}
             </p>
-            <a className='py-[13px] px-[25px] bg-[#6c2dba] text-md rounded-2xl font-semibold' href="/">{t("header.btn")}</a>
+            <a className='py-[13px] px-[25px] bg-[#6c2dba] text-md rounded-2xl font-semibold' href="#modal" >{t("header.btn")}</a>
           </div>
           <img className='max-w-[750px] max-h-[550px]' src={img} alt="kompyuter" />
         </section>

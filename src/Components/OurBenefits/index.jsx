@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ourBenefits from '../../Mock/ourBenefits';
 import { useTranslation } from 'react-i18next';
+import Aos from 'aos';
 
 export const OurBenefits = () => {
   const { t } = useTranslation();
 
+   useEffect(() => {
+        Aos.init({
+          duration: 900,
+          easing: 'ease-in-out',
+        });
+      }, []);
+
   return (
-    <section>
+    <section data-aos="fade-down">
       <div className='py-5'>
         <div className='max-w-[1400px] mx-auto'>
           <p className='text-[40px] text-center font-bold mb-[30px] mx-[66px]'>{t("benefits.title")}</p>

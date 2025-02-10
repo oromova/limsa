@@ -26,7 +26,6 @@ export const Router = createBrowserRouter([
         path: "/prices",
         element: <Prices/>
       },
-
     ]
   }
 ])

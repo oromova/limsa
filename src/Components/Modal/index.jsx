@@ -7,8 +7,8 @@ export const Modal = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="pt-[150px] pb-[50px] bg-cover bg-center">
-      <div className='max-w-[1400px] mx-auto px-5'>
+    <section className="pt-[150px] pb-[50px] bg-cover bg-center" id='modal'>
+      < div className = 'max-w-[1400px] mx-auto px-5' >
         <div className='flex justify-between gap-60px'>
           <div className='max-w-[550px] '>
             <h2 className='text-4xl font-semibold my-[30px]'>{t('modal.title')}</h2>
@@ -41,7 +41,7 @@ export const Modal = () => {
           </form>
         </div>
 
-      </div>
+      </div >
     </section >
   );
 };

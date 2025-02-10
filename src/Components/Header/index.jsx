@@ -24,16 +24,37 @@ export const Header = () => {
             <div className='w-[740px]'>
               <ul className='flex items-start mx-4'>
                 <li className="mx-4">
-                  <NavLink to='/'>{t('header.home')}</NavLink>
+                  <NavLink to='/' className={({ isActive}) => 
+                  isActive ? "border-b-3 border-[#6c2dba] pb-2 rounded-[6px]"
+                  : "text-white" 
+                }>
+                  {t('header.home')}
+                  </NavLink>
                 </li>
                 <li className="mx-4">
-                  <NavLink  to="/services" >{t("header.service")}</NavLink>
+                  <NavLink to="/services" className={({ isActive}) => 
+                  isActive ? "border-b-3 border-[#6c2dba] pb-2 rounded-[6px]"
+                  : "text-white" 
+                }>
+                    {t("header.service")}
+                    </NavLink>
                 </li>
                 <li className="mx-4">
-                  <NavLink  to="/works">{t("header.work")}</NavLink>
+                  <NavLink to="/works" className={({ isActive}) => 
+                  isActive ? "border-b-3 border-[#6c2dba] pb-2 rounded-[6px]"
+                  : "text-white" 
+                }>
+                    {t("header.work")}
+                  </NavLink>
                 </li>
                 <li className="mx-4">
-                  <NavLink  to="/prices">{t("header.price")}</NavLink>
+                  <NavLink to="/prices"
+                  className={({ isActive }) => 
+                    isActive ? "border-b-3 border-[#6c2dba] pb-2 rounded-[6px]"
+                    : "text-white" 
+                  }>
+                    {t("header.price")}
+                  </NavLink>
                 </li>
                 <select className="focus:outline-none bg-transparent cursor-pointer pt-1 font-semibold"
                   onChange={handleChange} value={launguage}>

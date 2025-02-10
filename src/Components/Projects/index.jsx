@@ -1,11 +1,21 @@
 import { useTranslation } from 'react-i18next';
 import project from '../../Mock/project';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 export const Projects = () => {
   const { t } = useTranslation();
 
+   useEffect(() => {
+      Aos.init({
+        duration: 900,
+        easing: 'ease-in-out',
+      });
+    }, []);
+
   return (
-    <section className='pt-[150px] '>
+    <section className='pt-[150px]' data-aos="fade-down">
       <div className='px-5'>
         <div className='max-w-[1400px] mx-auto'>
           <h2 className='mt-8 mb-20 font-semibold text-4xl text-center'>{t("projects.title")}</h2>
