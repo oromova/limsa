@@ -2,12 +2,12 @@ import logo from '../../assets/header-logo.png';
 import { useTranslation } from 'react-i18next';
 export const Header = () => {
   const { t, i18n } = useTranslation();
-  const launguage = localStorage.getItem('i18nextLng')
+  const launguage = localStorage.getItem('i18nextLng');
 
   const handleChange = (event) => {
-    const selectedLanguage = event.target.value
-    i18n.changeLanguage(selectedLanguage)
-  }
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage);
+  };
 
   return (
     <header>
@@ -36,14 +36,14 @@ export const Header = () => {
                 </li>
                 <select className="focus:outline-none bg-transparent cursor-pointer pt-1 font-semibold"
                   onChange={handleChange} value={launguage}>
-                  <option value="uz">Уз</option>
-                  <option value="ru">Ру</option>
-                  <option value="en">Eng</option>
+                  <option className='text-black font-semibold' value="uz">Уз</option>
+                  <option className='text-black font-semibold' value="ru">Ру</option>
+                  <option className='text-black font-semibold' value="en">Eng</option>
                 </select>
               </ul>
             </div>
-            <a className='py-[13px] px-[25px] bg-[#6c2dba] text-[14px] rounded-2xl' 
-                href="tel:+998935138833">+998 (33) 258 73 58 </a>
+            <a className='py-[13px] px-[25px] bg-[#6c2dba] text-[14px] rounded-2xl'
+              href="tel:+998935138833">+998 (33) 258 73 58 </a>
           </div>
         </div>
       </nav>

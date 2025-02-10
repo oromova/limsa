@@ -1,9 +1,10 @@
 import React from 'react';
 import ourBenefits from '../../Mock/ourBenefits';
+import { useTranslation } from 'react-i18next';
 
 export const OurBenefits = () => {
   const { t } = useTranslation();
-  
+
   return (
     <section>
       <div className='py-5'>

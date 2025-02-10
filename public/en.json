@@ -17,9 +17,6 @@
     "subtitle3": "Will you continue to support the site after it's finished?",
     "description3": "Our prices are really cheap compared to the quality. The reason is that we don't have excess labor in our web studio, so we don't have excess costs. That's why we keep our prices low compared to others."
   },
-  "projects": {
-    "title": "Our Recent Projects"
-  },
   "modal": {
     "title": "Order a website for your business now, And get a small gift from us 10% off!",
     "subtitle": "Satisfying every customer is our highest goal - LIMSA",
@@ -32,5 +29,24 @@
   "benefits": {
     "title": "Why us? Why most people choose us?",
     "subtitle": "Our Benefits"
-  } 
+  },
+  "slide": {
+    "slide1": "WEBSITE BUILDING SERVICE",
+    "slide2": "MOBILE APPS",
+    "slide3": "AUTOMATION SYSTEMS",
+    "slide4": "DIGITAL SOLUTIONS"
+  },
+  "projects": {
+    "title": "Our Recent Projects",
+    "descriptions": {
+      "bahodir_build": "Ataev Bahadir Build - quality construction and repair services! Choose us and create the house of your dreams.",
+      "autozoomrental": "AutoZoomRental - convenient and reliable car rental! Make your trip more enjoyable with our cars.",
+      "it_time_academy": "IT Time Academy is the place for modern IT knowledge! Master the professions of the future with us.",
+      "homekit": "HomeKit – modern and convenient smart home solutions! Ensure the safety and comfort of your home with us.",
+      "uzloyal": "UzLoyal is a reliable and convenient loyalty system! The most effective way to motivate your customers.",
+      "namanganoits": "Namangan ITS is a center for modern IT knowledge and skills! Unlock new opportunities at every step.",
+      "propartnyor": "ProPartnyor is the address of reliable and effective cooperation! We work together for the success of your business.",
+      "zamontour": "ZamonTour – experience an unforgettable travel journey with us! Your trip will be even more pleasant with us."
+    }
+  }
 }
