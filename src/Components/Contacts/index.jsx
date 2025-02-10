@@ -5,7 +5,7 @@ export const Contacts = () => {
   const { t } = useTranslation();
   return (
     <section className='my-[70px]'>
-      <div className='px-5 max-w-[1200px] mx-auto'>
+      <div className='px-5 max-w-[1400px] mx-auto'>
         <h2 className='text-[40px] font-bold my-[35px]'>{t("contact.title")}</h2>
         <div className='flex text-center '>
           <ul className='grid grid-cols-2 gap-[30px] my-4'>

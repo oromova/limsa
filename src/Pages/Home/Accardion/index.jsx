@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import section2 from '../../../assets/section2.png';
 import section3 from '../../../assets/section2-2.png';
 import { useTranslation } from 'react-i18next';
 
 export const Accardion = () => {
   const { t } = useTranslation();
+
+  const [openedIndex, setOpenedIndex] = useState(null);
+
+  const toggleAccardion = (indexedDB) => {
+    if (openedIndex === indexedDB) {
+      setOpenedIndex(null);
+    } else {
+      setOpenedIndex(indexedDB);
+    }
+  }
   
   return (
     <section className='mb-12'>
@@ -21,7 +31,7 @@ export const Accardion = () => {
           <p className='text-[38px] font-semibold my-7'>
             {t('accardion.title')}
           </p>
-          <div className='flex justify-between rounded-[20px] py-[30px] px-[20px] text-[20px] mb-3'
+          <div onClick={() => toggleAccardion(0)} className='flex justify-between rounded-[20px] py-[30px] px-[20px] text-[20px] mb-3'
             style={{ border: '1px solid rgb(68, 68, 68)' }}>
             <button>{t('accardion.subtitle1')}</button>
             <span>

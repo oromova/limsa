@@ -8,7 +8,7 @@ export const OurBenefits = () => {
   return (
     <section>
       <div className='py-5'>
-        <div className='max-w-[1200px] mx-auto'>
+        <div className='max-w-[1400px] mx-auto'>
           <p className='text-[40px] text-center font-bold mb-[30px] mx-[66px]'>{t("benefits.title")}</p>
           <p className='mb-[70px] text-[40px] text-center font-bold' style={{color: "rgb(108, 45, 186)"}}>{t("benefits.subtitle")}</p>
           <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-evenly lg:justify-around gap-5'>

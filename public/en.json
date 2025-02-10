@@ -26,16 +26,18 @@
     "textarea": "Your message",
     "Send": "Send"
   },
-  "benefits": {
-    "title": "Why us? Why most people choose us?",
-    "subtitle": "Our Benefits"
-  },
   "slide": {
     "slide1": "WEBSITE BUILDING SERVICE",
     "slide2": "MOBILE APPS",
     "slide3": "AUTOMATION SYSTEMS",
     "slide4": "DIGITAL SOLUTIONS"
   },
+  "benefits": {
+    "title": "Why us? Why most people choose us?",
+    "subtitle": "Our Benefits"
+ 
+  },
+
   "projects": {
     "title": "Our Recent Projects",
     "descriptions": {

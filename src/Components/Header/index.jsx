@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/header-logo.png';
 import { useTranslation } from 'react-i18next';
 export const Header = () => {
@@ -12,8 +13,8 @@ export const Header = () => {
   return (
     <header>
       <nav className='pt-3.5 pb-2.5 fixed w-full z-50 duration-300 text-white bg-[#161616]'>
-        <div className='w-[1200px] mx-auto'>
-          <div className='flex justify-items-start gap-10 items-center h-16'>
+        <div className='w-[1400px] mx-auto'>
+          <div className='flex justify-between gap-10 items-center h-16'>
             {/* LOGO */}
             <a href="/">
               <img className="w-[120px] mt-2 h-[30px] hover:scale-105 transition duration-200"
@@ -23,16 +24,16 @@ export const Header = () => {
             <div className='w-[740px]'>
               <ul className='flex items-start mx-4'>
                 <li className="mx-4">
-                  <a href="/">{t('header.home')}</a>
+                  <NavLink to='/'>{t('header.home')}</NavLink>
                 </li>
                 <li className="mx-4">
-                  <a href="/">{t("header.service")}</a>
+                  <NavLink  to="/services" >{t("header.service")}</NavLink>
                 </li>
                 <li className="mx-4">
-                  <a href="/">{t("header.work")}</a>
+                  <NavLink  to="/works">{t("header.work")}</NavLink>
                 </li>
                 <li className="mx-4">
-                  <a href="/">{t("header.price")}</a>
+                  <NavLink  to="/prices">{t("header.price")}</NavLink>
                 </li>
                 <select className="focus:outline-none bg-transparent cursor-pointer pt-1 font-semibold"
                   onChange={handleChange} value={launguage}>

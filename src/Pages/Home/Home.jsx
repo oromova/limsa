@@ -13,14 +13,14 @@ export const Home = () => {
   
   return (
     <div className='pt-[150px] pb-[100px]'>
-      <div className=' max-w-[1200px] mx-auto'>
+      <div className=' max-w-[1400px] mx-auto '>
         {/* section 1 */}
         <section className='flex justify-between items-center'>
           <div className='w-[450px]'>
-            <p className='text-[28px] font-semibold mt-6 mb-8'>
+            <p className='text-[32px] font-semibold mt-6 mb-8'>
               {t("header.title")}
             </p>
-            <p className='mb-6'>
+            <p className='text-[18px] mb-6'>
               {t("header.description")}
             </p>
             <a className='py-[13px] px-[25px] bg-[#6c2dba] text-md rounded-2xl font-semibold' href="/">{t("header.btn")}</a>
@@ -28,17 +28,11 @@ export const Home = () => {
           <img className='max-w-[750px] max-h-[550px]' src={img} alt="kompyuter" />
         </section>
       </div>
-      {/* section 2 */}
-      {/* <Accardion/> */}
-      {/* section 3 */}
+      <Accardion/>
       <Slide/>
-      {/* section 4 */}
       <Projects/>
-      {/* section 5 */}
       <OurBenefits/>
-      {/* section 6 */}
       <Modal/>
-      {/* section 7*/}
       <Contacts/>
     </div >
   );

@@ -7,7 +7,7 @@ export const Projects = () => {
   return (
     <section className='pt-[150px] '>
       <div className='px-5'>
-        <div className='max-w-[1200px] mx-auto'>
+        <div className='max-w-[1400px] mx-auto'>
           <h2 className='mt-8 mb-20 font-semibold text-4xl text-center'>{t("projects.title")}</h2>
           <ul className='grid grid-cols-3 gap-10'>
             {project.map((item) => (
