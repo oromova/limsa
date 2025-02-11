@@ -24,7 +24,8 @@
     "label": "Leave your details",
     "placeholder": "your name",
     "textarea": "Your message",
-    "Send": "Send"
+    "Send": "Send",
+    "Sending": "Sending..."
   },
   "slide": {
     "slide1": "WEBSITE BUILDING SERVICE",
