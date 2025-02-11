@@ -5,12 +5,15 @@ import { Contacts } from '../../Components/Contacts';
 
 export const Services = () => {
   return (
-    <div>
-      <div className='pt-[100px]'>
+    <section>
+      <div className='pt-[150px]'>
+        <div className='w-[180px] py-[15px] px-[20px] text-center mx-auto border border-[#6c2dba] rounded-[20px]'>
+          Our Services
+        </div>
         <OurBenefits/>
         <Modal/>
         <Contacts/>
       </div>
-    </div>
+    </section>
   )
 }

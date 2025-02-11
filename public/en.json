@@ -35,9 +35,7 @@
   "benefits": {
     "title": "Why us? Why most people choose us?",
     "subtitle": "Our Benefits"
- 
   },
-
   "projects": {
     "title": "Our Recent Projects",
     "descriptions": {
@@ -50,5 +48,23 @@
       "propartnyor": "ProPartnyor is the address of reliable and effective cooperation! We work together for the success of your business.",
       "zamontour": "ZamonTour – experience an unforgettable travel journey with us! Your trip will be even more pleasant with us."
     }
+  },
+  "prices": {
+    "price": "Our Prices",
+    "title": "Our affordable websites for you",
+    "cardTitle1": "LANDING PAGE",
+    "cardTitle2": "SITE CARD",
+    "cardTitle3": "EXCLUSIVE",
+    "subtitle1": "Another name for a one-page site is a Landing Page. The page is easy to use and introduces the customer to the information they need.",
+    "subtitle2": "It is the 'business card' of the company on the Internet. The site is to introduce the company's services or products to the people visiting the business page.",
+    "subtitle3": "This website is created based on your order. You can order any website you want.",
+    "domen": "Domain UZ",
+    "protection": "Protection 24/7",
+    "duration": "Duration 3 days",
+    "page": "Number of pages 1",
+    "page2": "Number of languages - Desired",
+    "level": "High Desing Level",
+    "negotiate": "Negotiate",
+    "btn": "Place Order"
   }
 }
